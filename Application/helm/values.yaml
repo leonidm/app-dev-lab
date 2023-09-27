@@ -2,8 +2,8 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'quay.io/leomrg861/first-app:v3'
-  tag: 'base'
+  image: 'quay.io/leomrg861/first-app'
+  tag: 'v3'
 
 service:
   servicePort: 8080
