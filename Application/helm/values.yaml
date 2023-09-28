@@ -9,7 +9,7 @@ service:
   servicePort: 8080
 
 probes:
-  readiness:
+  readinessProbe:
     httpGet:
       path: /health/readiness
       port: 8080
@@ -20,7 +20,7 @@ probes:
     successThreshold: 1 
     failureThreshold: 3
 
-  liveness:
+  livenessProbe:
     httpGet:
       path: /health/liveness
       port: 8080
